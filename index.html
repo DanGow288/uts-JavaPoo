@@ -1,7 +1,21 @@
 <html>
     <head>
         <script>
-            console.log("Hello world, changed")
+            //los arrays se suelen escribir en plural, se usa corchetes
+            let animales = ["Perro", "Gato", "Raton"]
+            //un objeto describe algo, se usa llaves
+            let animal = { raza: 'rotwailer', nombre: 'pluto', edad:5, ladrar:()=>{console.log("woof woof")}, macho:true}
+            console.log(animal.nombre)
+            console.log(typeof animal.nombre)
+
+            let estudiante = {
+                cedula: 1098678567,
+                notas: [{ nota: 3.5 }, { nota: 4.2 }, { nota: 1.9 }],
+                repitente: false,
+                edad: 23
+            }
+            let definitiva = (estudiante.notas[0].nota + estudiante.notas[1].nota + estudiante.notas[2].nota) /3
+            console.log(definitiva)
         </script>
     </head>
 </html>
